@@ -1,0 +1,23 @@
+/*
+ * timer.h
+ *
+ *  Created on: Nov 2, 2022
+ *      Author: Beelzebufo
+ */
+
+#ifndef INC_TIMER_H_
+#define INC_TIMER_H_
+
+#include <global.h>
+
+#define NO_OF_TIMER 1
+extern int timer_flag[NO_OF_TIMER];
+
+int timer_counter[NO_OF_TIMER] = { 0, };
+int timer_flag[NO_OF_TIMER] = { 0, };
+
+
+void setTimer(int index, int duration);
+void runTimer(int index);
+
+#endif /* INC_TIMER_H_ */

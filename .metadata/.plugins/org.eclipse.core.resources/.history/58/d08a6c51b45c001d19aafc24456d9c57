@@ -1,0 +1,20 @@
+/*
+ * global.h
+ *
+ *  Created on: Nov 2, 2022
+ *      Author: Beelzebufo
+ */
+
+#ifndef INC_GLOBAL_H_
+#define INC_GLOBAL_H_
+
+#include <timer.h>
+//Normal mode
+#define counterModes 10
+extern int normal_modes[counterModes];
+//Modify mode
+
+extern int status;
+
+
+#endif /* INC_GLOBAL_H_ */

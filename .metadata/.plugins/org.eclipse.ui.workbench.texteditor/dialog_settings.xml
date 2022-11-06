@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="is_button_pressed"/>
+		<list key="findhistory">
+			<item value="check_button_flag"/>
+			<item value="&#x09;&#x09;if (is_button_pressed(0) + check_button_flag(1) + checheck_button_flagck_button_flag(2)"/>
+			<item value="&#x09;&#x09;if (is_button_pressed(0) + check_button_flag(1) + check_button_flag(2)"/>
+			<item value="setTimer"/>
+			<item value="counterForButtonPress1s"/>
+			<item value="flagForButtonPress1s"/>
+			<item value="DURATION_FOR_AUTO_INCREASING"/>
+			<item value="check_button_flag(2)"/>
+			<item value="check_button_flag(1)"/>
+			<item value="check_button_flag(0)"/>
+		</list>
+		<list key="replacehistory">
+			<item value="is_button_pressed"/>
+			<item value="counterForButtonPress3s"/>
+			<item value="flagForButtonPress3s"/>
+			<item value="is_button_pressed(2)"/>
+			<item value="is_button_pressed(1)"/>
+			<item value="is_button_pressed(0)"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="826"/>
+		<item key="DIALOG_Y_ORIGIN" value="299"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="380"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

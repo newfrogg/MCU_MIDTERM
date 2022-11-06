@@ -1,0 +1,34 @@
+/*
+ * displayTrafficLight.c
+ *
+ *  Created on: Nov 2, 2022
+ *      Author: Beelzebufo
+ */
+
+#include <trafficLight.h>
+
+void displayTrafficLight(GPIO_TypeDef *GPIOx, int index, enum MODE light_mode) {
+	switch (light_mode) {
+	case RED:
+		HAL_GPIO_WritePin(GPIOx, 1 << index, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(GPIOx, 1 << (index + 1), GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOx, 1 << (index + 2), GPIO_PIN_RESET);
+		break;
+	case YELLOW:
+		HAL_GPIO_WritePin(GPIOx, 1 << index, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOx, 1 << (index + 1), GPIO_PIN_SET);
+		HAL_GPIO_WritePin(GPIOx, 1 << (index + 2), GPIO_PIN_RESET);
+		break;
+	case GREEN:
+		HAL_GPIO_WritePin(GPIOx, 1 << index, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOx, 1 << (index + 1), GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOx, 1 << (index + 2), GPIO_PIN_SET);
+		break;
+	default:
+		HAL_GPIO_WritePin(GPIOx, 1 << index, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOx, 1 << (index + 1), GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOx, 1 << (index + 2), GPIO_PIN_RESET);
+		break;
+	}
+}
+

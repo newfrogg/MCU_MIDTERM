@@ -1,0 +1,12 @@
+/*
+ * global.c
+ *
+ *  Created on: Nov 2, 2022
+ *      Author: Beelzebufo
+ */
+
+#include <global.h>
+
+int status = INC_3s;
+int globalCount = 6;
+int CYCLE = 10;

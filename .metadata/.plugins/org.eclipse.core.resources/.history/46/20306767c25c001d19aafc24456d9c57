@@ -1,0 +1,25 @@
+/*
+ * global.h
+ *
+ *  Created on: Nov 2, 2022
+ *      Author: Beelzebufo
+ */
+
+#ifndef INC_GLOBAL_H_
+#define INC_GLOBAL_H_
+
+#include <software_timer.h>
+/*
+ * Normal mode
+ * 0 -> 9 <=> status = 0 -> 9
+ */
+
+#define INIT		99
+#define RST			0
+#define INC			1
+#define DEC			-1
+
+extern int status;
+extern int CYCLE;
+extern int Global_count;
+#endif /* INC_GLOBAL_H_ */

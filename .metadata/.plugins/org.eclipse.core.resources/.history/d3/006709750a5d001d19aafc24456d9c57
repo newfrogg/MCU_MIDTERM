@@ -1,0 +1,36 @@
+/*
+ * global.h
+ *
+ *  Created on: Nov 2, 2022
+ *      Author: Beelzebufo
+ */
+
+#ifndef INC_GLOBAL_H_
+#define INC_GLOBAL_H_
+
+#include <software_timer.h>
+/*
+ * Normal mode
+ * 0 -> 9 <=> status = 0 -> 9
+ */
+
+/*
+ * Button 1 click states
+ */
+#define INIT		99
+#define RST			0
+#define INC			1
+#define DEC			-1
+
+/*
+ * Button long-press states
+ */
+#define INC_3s		4
+#define DEC_3s		2
+
+
+
+extern int status;
+extern int CYCLE;
+extern int globalCount;
+#endif /* INC_GLOBAL_H_ */

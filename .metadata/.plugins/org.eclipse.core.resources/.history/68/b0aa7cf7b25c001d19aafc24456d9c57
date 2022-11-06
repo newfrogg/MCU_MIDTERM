@@ -1,0 +1,42 @@
+/*
+ * fsm_automatic.c
+ *
+ *  Created on: Nov 2, 2022
+ *      Author: Beelzebufo
+ */
+
+#include <fsm_automatic.h>
+
+void runAutoFSM(){
+	switch(status){
+	case INIT:
+		//TODO
+		displayTrafficLight(GPIOA, 5, -1);
+		status = AUTO_RED;
+		setTimer(0,500);
+		break;
+	case AUTO_RED:
+		displayTrafficLight(GPIOA, 5, RED);
+		if(timer_flag[0] == 1){
+			status = AUTO_YELLOW;
+			setTimer(0,200);
+		}
+		break;
+	case AUTO_YELLOW:
+		displayTrafficLight(GPIOA, 5, YELLOW);
+		if(timer_flag[0] == 1){
+			status = AUTO_GREEN;
+			setTimer(0,300);
+		}
+		break;
+	case AUTO_GREEN:
+		displayTrafficLight(GPIOA, 5, GREEN);
+		if(timer_flag[0] == 1){
+			status = AUTO_RED;
+			setTimer(0,500);
+		}
+		break;
+	default:
+		break;
+	}
+}
